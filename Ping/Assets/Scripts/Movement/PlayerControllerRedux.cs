@@ -96,7 +96,6 @@ public class PlayerControllerRedux : SVBLM.Core.FSM {
 	public AudioClip slideLoop;
 
 	void Start() {
-		slidingSystem.emissionRate = 0;
 		initialPosition = transform.position;
 		if (head == null) {
 			Debug.LogError("You need to assign the head transform of the player controller.");
@@ -123,7 +122,6 @@ public class PlayerControllerRedux : SVBLM.Core.FSM {
 	}
 
 	IEnumerator JUMPING_EnterState() {
-		footstep.PlayJump ();
 		velocity.y = JUMP_SPEED;
 		currentState = States.FALLING;
 		yield break;
@@ -165,7 +163,6 @@ public class PlayerControllerRedux : SVBLM.Core.FSM {
 	}
 
 	IEnumerator GROUNDED_EnterState() {
-		footstep.Play ();
 		yield break;
 	}
 
@@ -179,7 +176,6 @@ public class PlayerControllerRedux : SVBLM.Core.FSM {
 		if (Input.GetButtonDown ("Jump")) currentState = States.JUMPING; 
 
 		if (footstepTimer > 0.3f) {
-			footstep.Play();
 			footstepTimer = 0;
 		} else {
 			footstepTimer += Time.deltaTime * Mathf.Lerp(0, 1.3f, XZVelocity().magnitude/MAX_XZ_VELOCITY);
