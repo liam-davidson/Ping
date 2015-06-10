@@ -1,0 +1,28 @@
+Ping/[Ll]ibrary/
+Ping/[Tt]emp/
+Ping/[Oo]bj/
+Ping/Assets/Whiteboard/
+Ping/*.svd
+Ping/*.suo
+Ping/*.pdb
+Ping/Ping_Data/**
+Ping/*.swp
+Ping/*.exe
+Ping/*.app
+Ping/*.csproj
+Ping/*.pidb
+Ping/*.sln
+Ping/*.unityproj
+Ping/*.userprefs
+
+Ping/![Ll]ibrary/*.asset
+Ping/![Ll]ibrary/AssetImportState
+Ping/![Ll]ibrary/AssetVersioning.db
+Ping/![Ll]ibrary/BuildPlayer.prefs
+Ping/![Ll]ibrary/ScriptMapper
+Ping/![Ll]ibrary/assetservercachev3
+Ping/![Ll]ibrary/expandedItems
+Ping/![Ll]ibrary/guidmapper
+Ping/![Ll]ibrary/unity default resources
+Ping/![Ll]ibrary/unity editor resources
+Builds
